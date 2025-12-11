@@ -1,4 +1,5 @@
 import React from 'react';
+import OptimizedImage from './OptimizedImage';
 
 export default function About() {
     // Personal information
@@ -7,11 +8,14 @@ export default function About() {
     
     return (
         <section className="about-section">
-            {/* Profile image */}
-            <img
+            {/* Optimized profile image with lazy loading */}
+            <OptimizedImage
                 src={profileSrc}
                 alt={`${name} profile`}
                 className="profile-image"
+                width="200"
+                height="200"
+                loading="lazy"
             />
             
             {/* Name heading */}
