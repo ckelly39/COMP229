@@ -13,6 +13,24 @@ export default function Home() {
                     My commitment is to deliver excellence, foster creativity, and build a community of engaged users.
                 </p>
             </div>
+
+            {/* CI/CD Demo Update - December 10, 2025 */}
+            <div style={{ 
+                backgroundColor: '#f0f9ff', 
+                padding: '20px', 
+                borderRadius: '8px',
+                margin: '20px 0',
+                border: '2px solid #3b82f6'
+            }}>
+                <h3 style={{ color: '#1e40af' }}>🎉 Latest Update - CI/CD Demonstration</h3>
+                <p>
+                    This application features automated continuous deployment! 
+                    Changes pushed to GitHub are automatically built and deployed to production.
+                </p>
+                <p style={{ fontSize: '0.9em', color: '#6b7280' }}>
+                    <strong>Updated:</strong> December 10, 2025 | <strong>Feature:</strong> Automated CI/CD Pipeline
+                </p>
+            </div>
             
             <div className="navigation-buttons">
                 <Link to="/about" className="nav-button">About Us</Link>
