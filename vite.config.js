@@ -31,13 +31,10 @@ export default defineConfig({
         },
       },
     },
-    // Enable minification
-    minify: 'terser',
-    terserOptions: {
-      compress: {
-        drop_console: true, // Remove console.logs in production
-        drop_debugger: true,
-      },
+    // Enable minification with esbuild
+    minify: 'esbuild',
+    esbuild: {
+      drop: ['console', 'debugger'], // Remove console.logs in production
     },
   },
   // Optimize dependencies
